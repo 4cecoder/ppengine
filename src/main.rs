@@ -12,7 +12,7 @@ glium::implement_vertex!(Vertex2d, position);
 fn main() {
     let event_loop = glutin::event_loop::EventLoop::new();
     let wb = glutin::window::WindowBuilder::new()
-        .with_title("Platformer")
+        .with_title("PP Engine")
         .with_inner_size(glutin::dpi::LogicalSize::new(640.0, 400.0));
     let cb = glutin::ContextBuilder::new();
     let display = glium::Display::new(wb, cb, &event_loop).unwrap();
@@ -61,7 +61,7 @@ fn main() {
         }
 
         let mut target = display.draw();
-        target.clear_color(0.04, 0.04, 0.04, 1.0);
+        target.clear_color(0.53, 0.81, 0.92, 1.0);
         target.draw(&vertex_buffer, &indices, &program, &glium::uniform! {}, &Default::default()).unwrap();
         target.finish().unwrap();
     });
