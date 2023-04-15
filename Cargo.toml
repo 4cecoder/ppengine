@@ -1,0 +1,10 @@
+[package]
+name = "ppengine"
+version = "0.1.0"
+authors = ["4cecoder"]
+edition = "2018"
+
+[dependencies]
+glium = "0.29.0"
+glutin = "0.26.0"
+
